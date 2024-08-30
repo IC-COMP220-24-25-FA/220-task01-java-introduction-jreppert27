@@ -30,7 +30,17 @@ public class RectangleTest {
 
     @Test
     public void doubleSizeTest(){
-        
+        Rectangle myRectangle = new Rectangle(3, 4);
+        myRectangle.doubleSize(); 
+        assertEquals(24, myRectangle.calcArea(), 0.0001);
+
+        myRectangle = new Rectangle(7.5, 3.07);
+        myRectangle.doubleSize();
+        assertEquals(46.05, myRectangle.calcArea(), 0.0001);
+
+        myRectangle = new Rectangle(1, 1);
+        myRectangle.doubleSize();
+        assertEquals(2, myRectangle.calcArea(), 0.0001);
     }
 
     @Test

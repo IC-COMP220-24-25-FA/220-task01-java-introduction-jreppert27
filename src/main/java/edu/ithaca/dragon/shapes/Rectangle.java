@@ -17,7 +17,8 @@ public class Rectangle {
     }
 
     public void doubleSize(){
-        throw new RuntimeException("Not implemented yet");
+        this.length = length * 2;
+        this.width = width * 2;
     }
 
     public double longestLineWithin(){

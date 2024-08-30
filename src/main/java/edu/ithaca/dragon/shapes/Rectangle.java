@@ -17,8 +17,8 @@ public class Rectangle {
     }
 
     public void doubleSize(){
-        this.length = length * 2;
-        this.width = width * 2;
+        this.length = length * Math.sqrt(2);
+        this.width = width * Math.sqrt(2);
     }
 
     public double longestLineWithin(){

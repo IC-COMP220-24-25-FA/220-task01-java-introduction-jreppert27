@@ -30,7 +30,7 @@ public class RectangleTest {
 
     @Test
     public void doubleSizeTest(){
-        Rectangle myRectangle = new Rectangle(3, 4);
+        Rectangle myRectangle = new Rectangle(6, 4);
         myRectangle.doubleSize(); 
         assertEquals(24, myRectangle.calcArea(), 0.0001);
 
@@ -45,7 +45,14 @@ public class RectangleTest {
 
     @Test
     public void longestLineWithinTest(){
+        Rectangle myRectangle = new Rectangle(3, 4);
+        assertEquals(5, myRectangle.longestLineWithin(), 0.0000000001);
 
+        myRectangle = new Rectangle(7.5, 3.07);
+        assertEquals(8.104005182624206, myRectangle.longestLineWithin(), 0.0000000001);
+
+        myRectangle = new Rectangle(1, 1);
+        assertEquals(1.4142135623730951, myRectangle.longestLineWithin(), 0.00000000001);
     }
 
     @Test

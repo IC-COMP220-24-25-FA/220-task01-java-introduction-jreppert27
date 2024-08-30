@@ -18,7 +18,14 @@ public class RectangleTest {
     
     @Test
     public void calcAreaTest(){
-        
+        Rectangle myRectangle = new Rectangle(3, 4);
+        assertEquals(12, myRectangle.calcArea(), 0.0001);
+
+        myRectangle = new Rectangle(7.5, 3.07);
+        assertEquals(23.025, myRectangle.calcArea(), 0.0001);
+
+        myRectangle = new Rectangle(1, 1);
+        assertEquals(1, myRectangle.calcArea(), 0.0001);
     }
 
     @Test
@@ -28,7 +35,7 @@ public class RectangleTest {
 
     @Test
     public void longestLineWithinTest(){
-        
+
     }
 
     @Test

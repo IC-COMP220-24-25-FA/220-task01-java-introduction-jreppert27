@@ -72,6 +72,13 @@ public class FunctionPracticeTest {
 
     @Test
     public void findFirstMostOccurencesOfLetterTest(){
-        throw new RuntimeException("Not Implemented");
+        List<String> newList = List.of("dog", "bat", "cat", "dandalion");    
+        assertEquals("dandalion", FunctionPractice.findFirstMostOccurencesOfLetter(newList, 'a'));
+        newList = List.of("dog", "bat", "cat", "dandalion");    
+        assertEquals("dog", FunctionPractice.findFirstMostOccurencesOfLetter(newList, 'g'));
+        newList = List.of("dog", "bat", "cat", "dandalion");    
+        assertEquals(null, FunctionPractice.findFirstMostOccurencesOfLetter(newList, 'z'));
+        newList = List.of();    
+        assertEquals(null, FunctionPractice.findFirstMostOccurencesOfLetter(newList, 'a'));
     }
 }

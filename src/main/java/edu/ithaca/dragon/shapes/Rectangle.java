@@ -25,4 +25,7 @@ public class Rectangle {
         return (Math.sqrt((length * length) + (width * width)));
     }
     
+    public String toString(){
+        return "Area= " + this.calcArea() + ", Longest Line Within= " + this.longestLineWithin();
+    }
 }

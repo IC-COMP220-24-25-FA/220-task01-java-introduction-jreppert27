@@ -2,9 +2,6 @@ package edu.ithaca.dragon.practice;
 
 import java.util.List;
 
-import scala.math.BigDecimal;
-import java.math.RoundingMode;
-
 public class FunctionPractice {
 
     /**
@@ -72,7 +69,21 @@ public class FunctionPractice {
      * If the largest number occurs more than once, return the index of the first occurence.
      */
     public static int findFirstLargest(List<Integer> numbers){
-        throw new RuntimeException("Not Implemented");
+        if (numbers == null || numbers.isEmpty()) {
+            return -1;
+        }
+    
+        int maxIndex = 0;
+        int maxValue = numbers.get(0);
+    
+        for (int i = 1; i < numbers.size(); i++) {
+            if (numbers.get(i) > maxValue) {
+                maxValue = numbers.get(i);
+                maxIndex = i;
+            }
+        }
+    
+        return maxIndex;
     }
 
     /**

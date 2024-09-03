@@ -9,15 +9,20 @@ public class FunctionPractice {
      * @throws IllegalArgumentException if any of the numbers is negative
      */
     public static int largestOfThree(int first, int second, int third) {
+        // Check if any of the numbers is negative
+        if (first < 0 || second < 0 || third < 0) {
+            throw new IllegalArgumentException("All numbers must be non-negative");
+        }
+
+        // Find and return the largest of the three numbers
         int largest = first;
-        if (largest < second) {
+        if (second > largest) {
             largest = second;
         }
-        if (largest < third) {
+        if (third > largest) {
             largest = third;
         }
-        
-
+        return largest;
     }
     
     /**

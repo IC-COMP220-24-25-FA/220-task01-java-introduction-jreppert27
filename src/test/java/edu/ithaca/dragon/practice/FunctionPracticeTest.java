@@ -58,7 +58,16 @@ public class FunctionPracticeTest {
 
     @Test
     public void findLastLargestTest(){
-        throw new RuntimeException("Not Implemented");
+        List<Integer> newList = List.of(1, 2, 3, 4, 5);
+        assertEquals(4, FunctionPractice.findLastLargest(newList));
+        newList = List.of(5, 4, 3, 2, -1);
+        assertEquals(0, FunctionPractice.findLastLargest(newList));
+        newList = List.of(1, 2, 2, 2, 1);
+        assertEquals(3, FunctionPractice.findLastLargest(newList));
+        newList = List.of(5, 0, 3, 4, 5);
+        assertEquals(4, FunctionPractice.findLastLargest(newList));
+        newList = List.of();
+        assertEquals(-1, FunctionPractice.findLastLargest(newList));
     }
 
     @Test

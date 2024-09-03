@@ -91,7 +91,21 @@ public class FunctionPractice {
      * If the largest number occurs more than once, return the index of the last occurence.
      */
     public static int findLastLargest(List<Integer> numbers){
-        throw new RuntimeException("Not Implemented");
+        if (numbers == null || numbers.isEmpty()) {
+            return -1;
+        }
+    
+        int maxIndex = 0;
+        int maxValue = numbers.get(0);
+    
+        for (int i = 1; i < numbers.size(); i++) {
+            if (numbers.get(i) >= maxValue) {
+                maxValue = numbers.get(i);
+                maxIndex = i;
+            }
+        }
+    
+        return maxIndex;    
     }
 
     /**

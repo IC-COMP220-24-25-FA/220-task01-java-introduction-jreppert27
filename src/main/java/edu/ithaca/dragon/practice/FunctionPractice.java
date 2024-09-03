@@ -2,6 +2,9 @@ package edu.ithaca.dragon.practice;
 
 import java.util.List;
 
+import scala.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class FunctionPractice {
 
     /**
@@ -29,7 +32,16 @@ public class FunctionPractice {
      * @return the final price at register of the given item after discount and tax applied
      */
     public static double calcSalePrice(double originalPrice, double discountPercent, double salesTax){
-        throw new RuntimeException("Not Implemented");
+        // Calculate the price after applying the discount
+        double discountedPrice = originalPrice * (1 - discountPercent / 100.0);
+        
+        // Calculate the final price after adding sales tax
+        double finalPrice = discountedPrice * (1 + salesTax / 100.0);
+        
+        // Round the final price to the nearest hundredth
+        double roundedPrice = Math.round(finalPrice * 100.0) / 100.0;
+        
+        return roundedPrice;  
     }
 
     /**

@@ -29,4 +29,29 @@ public class FunctionPracticeTest {
         assertEquals(7.90, FunctionPractice.calcSalePrice(9.66, 25, 9));
     }
     
+    @Test
+    public void isGoodDogTest(){
+        assertTrue(FunctionPractice.isGoodDog(17, 9, true));
+        assertTrue(FunctionPractice.isGoodDog(10, 1, true));
+        assertTrue(FunctionPractice.isGoodDog(1, 0, false));
+
+        assertFalse(FunctionPractice.isGoodDog(15, 4, false));
+        assertFalse(FunctionPractice.isGoodDog(5, 3, false));
+
+    }
+
+    @Test
+    public void findFirstLargestTest(){
+        throw new RuntimeException("Not Implemented"); 
+    }
+
+    @Test
+    public void findLastLargestTest(){
+        throw new RuntimeException("Not Implemented");
+    }
+
+    @Test
+    public void findFirstMostOccurencesOfLetterTest(){
+        throw new RuntimeException("Not Implemented");
+    }
 }

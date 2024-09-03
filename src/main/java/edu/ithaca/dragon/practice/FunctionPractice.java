@@ -48,7 +48,23 @@ public class FunctionPractice {
      * @return true if the data collected shows the dog is good, false if bad dog today
      */
     public static boolean isGoodDog(int yearsOld, int daysSinceShoesChewed, boolean fetchedThePaperToday){
-        throw new RuntimeException("Not Implemented");
+        //If the dog is young (e.g., less than 2 years old), we might be more forgiving.
+        if (yearsOld < 2) {
+            return true;
+        }
+
+        //If the dog hasn't chewed shoes in a while (e.g., more than a week), that's a good sign.
+        if (daysSinceShoesChewed > 7) {
+            return true;
+        }
+
+        //Fetching the paper today is definitely a sign of a good dog.
+        if (fetchedThePaperToday) {
+            return true;
+        }
+
+        //If none of the criteria for a good dog are met, the dog is "bad" today.
+        return false;
     }
 
     /**

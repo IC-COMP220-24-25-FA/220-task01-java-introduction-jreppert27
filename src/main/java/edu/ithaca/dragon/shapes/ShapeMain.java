@@ -26,7 +26,7 @@ public class ShapeMain {
                     Shape newCircle = new Circle(randomNumber1);
                     shapeList.add(newCircle);
                     break;
-        }
+            }
         }
         for (int j = 0; j < 10; j++){
             System.out.println("Shape " + (j+1) + ": " + shapeList.get(j));
@@ -44,9 +44,8 @@ public class ShapeMain {
             newShape.doubleSize();
 
             for (int j = 0; j < 10; j++){
-                System.out.println("Rectangle " + (j+1) + ": " + shapeList.get(j));
+                System.out.println("Shape " + (j+1) + ": " + shapeList.get(j));
             }
         }
-    
     }
 }

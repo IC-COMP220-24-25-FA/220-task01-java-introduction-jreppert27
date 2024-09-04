@@ -17,12 +17,16 @@ public class ShapeMain {
                 case 0: //Rectangle
                     Shape newRect = new Rectangle(randomNumber1, randomNumber2);
                     shapeList.add(newRect);
+                    break;
                 case 1: //Triangle
                     Shape newTriangle = new Triangle(randomNumber1, randomNumber2);
                     shapeList.add(newTriangle);
+                    break;
                 case 2: //Circle
                     Shape newCircle = new Circle(randomNumber1);
                     shapeList.add(newCircle);
+                    break;
+        }
         }
         for (int j = 0; j < 10; j++){
             System.out.println("Shape " + (j+1) + ": " + shapeList.get(j));
@@ -43,6 +47,6 @@ public class ShapeMain {
                 System.out.println("Rectangle " + (j+1) + ": " + shapeList.get(j));
             }
         }
-    }
+    
     }
 }

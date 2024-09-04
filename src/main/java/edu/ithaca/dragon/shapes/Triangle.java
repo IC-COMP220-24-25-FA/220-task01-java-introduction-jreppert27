@@ -26,4 +26,8 @@ public class Triangle implements Shape{
         return Math.sqrt(Math.pow(halfBase, 2) + Math.pow(height, 2));
         
     }
+
+    public String toString(){
+        return "Area= " + this.calcArea() + ", Longest Line Within= " + this.longestLineWithin();
+    }
 }

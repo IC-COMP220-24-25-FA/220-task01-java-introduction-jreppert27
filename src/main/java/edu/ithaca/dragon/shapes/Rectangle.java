@@ -1,6 +1,6 @@
 package edu.ithaca.dragon.shapes;
 
-public class Rectangle {
+public class Rectangle implements Shape{
     private double length;
     private double width;
 
@@ -25,4 +25,7 @@ public class Rectangle {
         return (Math.sqrt((length * length) + (width * width)));
     }
     
+    public String toString(){
+        return "RECTANGLE *** Area= " + this.calcArea() + ", Longest Line Within= " + this.longestLineWithin();
+    }
 }

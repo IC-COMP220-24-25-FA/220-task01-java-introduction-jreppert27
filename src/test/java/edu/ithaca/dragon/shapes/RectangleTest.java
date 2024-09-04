@@ -59,7 +59,4 @@ public class RectangleTest {
     public void TestConstructorError(){
         assertThrows(IllegalArgumentException.class, () -> new Rectangle(0, 0));
     }
-
-
-    
 }

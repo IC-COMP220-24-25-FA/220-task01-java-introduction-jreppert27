@@ -28,6 +28,6 @@ public class Triangle implements Shape{
     }
 
     public String toString(){
-        return "Area= " + this.calcArea() + ", Longest Line Within= " + this.longestLineWithin();
+        return "TRIANGLE *** Area= " + this.calcArea() + ", Longest Line Within= " + this.longestLineWithin();
     }
 }

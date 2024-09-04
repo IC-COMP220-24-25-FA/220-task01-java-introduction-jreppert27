@@ -26,6 +26,6 @@ public class Rectangle implements Shape{
     }
     
     public String toString(){
-        return "Area= " + this.calcArea() + ", Longest Line Within= " + this.longestLineWithin();
+        return "RECTANGLE *** Area= " + this.calcArea() + ", Longest Line Within= " + this.longestLineWithin();
     }
 }
